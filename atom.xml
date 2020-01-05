@@ -1,19 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://mixfeng.github.io</id>
+    <id>https://mixfeng.github.io</id>
     <title>Gridea</title>
-    <updated>2020-01-05T10:09:13.334Z</updated>
+    <updated>2020-01-05T10:13:14.102Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://mixfeng.github.io"/>
-    <link rel="self" href="http://mixfeng.github.io/atom.xml"/>
+    <link rel="alternate" href="https://mixfeng.github.io"/>
+    <link rel="self" href="https://mixfeng.github.io/atom.xml"/>
     <subtitle>观察人间</subtitle>
-    <logo>http://mixfeng.github.io/images/avatar.png</logo>
-    <icon>http://mixfeng.github.io/favicon.ico</icon>
+    <logo>https://mixfeng.github.io/images/avatar.png</logo>
+    <icon>https://mixfeng.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>https://mixfeng.github.io/post/test</id>
+        <link href="https://mixfeng.github.io/post/test">
+        </link>
+        <updated>2020-01-05T10:10:12.000Z</updated>
+        <content type="html"><![CDATA[<p>update 2020.1.2<br>
+1.内置 friends.ejs ，客户端--主题自定义；<br>
+2.内置 movies.ejs 和 books.ejs，secret 可以在前往 https://bm.weajs.com/ 注册即可获取。<br>
+3.添加置顶文章特定样式。</p>
+<p>使用不完全指南<br>
+1.缩略图显示逻辑：如果有设置封面图使用，或者有设置标签使用标签的slug的图片（实现特定一类标签的默认图），或啥也没设置使用默认jpg。相关代码如下</p>
+<p>&lt;% if (post.feature) { %&gt;&lt;%= post.feature %&gt;&lt;% } else if (post.tags[0]) { %&gt;&lt;%= themeConfig.domain %&gt;/media/images/&lt;%= post.tags[0].slug %&gt;.jpg&lt;% } else { %&gt;&lt;%= themeConfig.domain %&gt;/media/images/gridea.jpg&lt;%} %&gt;<br>
+JavaScript<br>
+2.首页日志的两种样式有日志内的 more 标签决定，有则会显示内容摘要的样式，没有more标签显示的仅图片和标题。</p>
+<p>3.客户端内菜单的“首页”条目可删除，主题模板自带，为了高亮首页。相关代码：</p>
+<p>&lt;% if (site.isHomepage) { %&gt;<br>
+<li class="current-menu-item"><a href="<%= themeConfig.domain %>" class="menu">首页</a></li><br>
+&lt;% } else{ %&gt;<br>
+<li class=""><a href="<%= themeConfig.domain %>" class="menu">首页</a></li><br>
+&lt;%} %&gt;<br>
+HTML<br>
+4.日志内多照片瀑布流，如以下格式，注意保持同一行：</p>
+<p><photos><img src="https://lmm.elizen.me/images/2019/10/wl-1.jpg" alt="" loading="lazy"><img src="https://lmm.elizen.me/images/2019/10/wl-3.jpg" alt="" loading="lazy"><img src="https://lmm.elizen.me/images/2019/10/wl-4.jpg" alt="" loading="lazy"><img src="https://lmm.elizen.me/images/2019/10/wl-5.jpeg" alt="" loading="lazy"></photos><br>
+HTML</p>
+<p>5.标签背景色可在 main.less 最底下修改或指定，如指定标签 gridea 的背景色：</p>
+<p>a.ctag-gridea{background-color: #f37b1d !important}/<em>橙黄</em>/<br>
+CSS<br>
+6.容我再想想……</p>
+<p>硬折腾模板记录<br>
+1.适配日志标签有或没有，有一个或者多个。限制仅输出一个标签或不显示。</p>
+<p>&lt;% if (post.tags[0]) { %&gt;<br>
+<div class="tags absolute"><br>
+<a href="<%= post.tags[0].link %>" class="ctag ctag-<%= postIndex%> ctag-<%= post.tags[0].slug %>">&lt;%= post.tags[0].name %&gt;</a><br>
+</div><br>
+&lt;% }; %&gt;<br>
+HTML<br>
+2.预设标签云默认背景色，通过 tagindex 实现。</p>
+<p>&lt;% site.tags.forEach(function(tag, tagIndex) { %&gt;<br>
+<a href="<%= tag.link %>" class="ctag ctag-<%= tagIndex %> ctag-<%= tag.slug %>" aria-label="">&lt;%= tag.name %&gt;</a><br>
+&lt;% }); %&gt;<br>
+HTML<br>
+3.预设首页两种样式，以 more 标签为判断。</p>
+<p>&lt;% if ( !post.abstract ) { %&gt;<br>
+……<br>
+&lt;% }); %&gt;<br>
+HTML<br>
+感谢<br>
+集颜值与功能于一身的 Gridea！！</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://mixfeng.github.io/post/hello-gridea</id>
-        <link href="http://mixfeng.github.io/post/hello-gridea">
+        <id>https://mixfeng.github.io/post/hello-gridea</id>
+        <link href="https://mixfeng.github.io/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
