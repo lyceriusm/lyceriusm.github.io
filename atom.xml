@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mixfeng.github.io</id>
-    <title>無人访问</title>
-    <updated>2020-01-05T14:20:07.300Z</updated>
+    <title>庸俗</title>
+    <updated>2020-01-06T03:53:43.074Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mixfeng.github.io"/>
     <link rel="self" href="https://mixfeng.github.io/atom.xml"/>
     <subtitle>有趣的灵魂，终会相遇</subtitle>
     <logo>https://mixfeng.github.io/images/avatar.png</logo>
     <icon>https://mixfeng.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 無人访问</rights>
+    <rights>All rights reserved 2020, 庸俗</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://mixfeng.github.io/post/hello-gridea</id>
