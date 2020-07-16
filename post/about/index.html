@@ -102,6 +102,8 @@
       
 
       
+        <div id="vlaine-comment"></div>
+      
 
       <footer class="py-12 text-center px-4 md:px-0" v-pre>
   当时明月在，曾照彩云归。
@@ -285,6 +287,23 @@
     //初始化
     initImg();
   </script>
+  
+    <script type="application/javascript" src="https://unpkg.com/valine"></script>
+<script type="application/javascript">
+  new Valine({
+    el: '#vlaine-comment',
+    appId: 'JmAMKJ3IlBR8GH11tpkYw1Lf-gzGzoHsz',
+    appKey: 'IgvVKssDbGQmTFqApwHfJ6M7',
+    pageSize: 10,
+    notify: true,
+    avatar: 'mp',
+    verify: true,
+    placeholder: '来都来了，不妨评论一下',
+    visitor: true,
+    highlight: true,
+    recordIP: true,
+  })
+</script>
   
   
 </body>
