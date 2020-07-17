@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyceriusm.github.io</id>
-    <title>moom</title>
-    <updated>2020-07-17T04:03:46.036Z</updated>
+    <title>MOOM</title>
+    <updated>2020-07-17T04:04:35.458Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyceriusm.github.io"/>
     <link rel="self" href="https://lyceriusm.github.io/atom.xml"/>
     <subtitle>有趣的灵魂，终会相遇</subtitle>
     <logo>https://lyceriusm.github.io/images/avatar.png</logo>
     <icon>https://lyceriusm.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, moom</rights>
+    <rights>All rights reserved 2020, MOOM</rights>
     <entry>
         <title type="html"><![CDATA[关于一个博客的诞生]]></title>
         <id>https://lyceriusm.github.io/post/gAuB4RzBX/</id>
